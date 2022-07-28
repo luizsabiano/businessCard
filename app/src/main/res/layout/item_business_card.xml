@@ -6,6 +6,7 @@
     android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcv_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/margin_default"
@@ -26,7 +27,7 @@
             android:layout_margin="@dimen/margin_default">
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tv_nome"
+                android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -35,12 +36,12 @@
                 tools:text="Luiz Sabiano F. Medeiros" />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tv_telefone"
+                android:id="@+id/tv_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_nome"
+                app:layout_constraintTop_toBottomOf="@id/tv_name"
                 tools:text="27 99794-9973" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -49,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_telefone"
+                app:layout_constraintTop_toBottomOf="@id/tv_phone"
                 tools:text="luizsabiano@gmail.com" />
 
             <com.google.android.material.textview.MaterialTextView
