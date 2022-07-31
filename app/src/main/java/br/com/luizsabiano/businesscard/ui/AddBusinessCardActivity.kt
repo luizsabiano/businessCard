@@ -1,10 +1,9 @@
 package br.com.luizsabiano.businesscard.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
-import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import br.com.luizsabiano.businesscard.App
 import br.com.luizsabiano.businesscard.R
 import br.com.luizsabiano.businesscard.data.BusinessCard
@@ -14,7 +13,7 @@ import br.com.luizsabiano.businesscard.databinding.ActivityAddBusinessCardBindin
 class AddBusinessCardActivity : AppCompatActivity() {
 
     private val binding by lazy { ActivityAddBusinessCardBinding.inflate(layoutInflater) }
-    private val mainViewModel:  MainViewModel by viewModels {
+    private val mainViewModel: MainViewModel by viewModels {
         MainViewModelFactory((application as App).repository)
     }
 
