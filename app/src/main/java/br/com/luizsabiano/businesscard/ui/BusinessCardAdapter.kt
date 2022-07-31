@@ -17,7 +17,6 @@ class BusinessCardAdapter: ListAdapter<BusinessCard, BusinessCardAdapter.ViewHol
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = ItemBusinessCardBinding.inflate(inflater, parent, false)
-
         return ViewHolder(binding)
     }
 

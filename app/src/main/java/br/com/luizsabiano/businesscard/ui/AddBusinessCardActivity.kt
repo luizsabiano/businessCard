@@ -20,7 +20,9 @@ class AddBusinessCardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
         insertListener()
+
     }
 
     private fun insertListener() {
@@ -34,7 +36,8 @@ class AddBusinessCardActivity : AppCompatActivity() {
                 phone = binding.tilPhone.editText?.text.toString(),
                 company = binding.tilCompany.editText?.text.toString(),
                 email = binding.tilEmail.editText?.text.toString(),
-                personalBackground = binding.tilColor.editText?.text.toString()
+                //personalBackground = binding.tilColor.editText?.text.toString().uppercase()
+                personalBackground = binding.tilColor.editText?.text.toString().uppercase().ifBlank { "#BDEADB" }
             )
             mainViewModel.insert(businessCard)
             Toast.makeText(this, R.string.label_show_success, Toast.LENGTH_SHORT).show()
